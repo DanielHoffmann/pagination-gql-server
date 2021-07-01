@@ -11,7 +11,7 @@ module.exports = gql`
   interface PaginationResult {
     count: Int!
     nodes: [Node!]!
-    cursor: String
+    nextPageCursor: String
     hasNextPage: Boolean!
   }
 
@@ -49,7 +49,7 @@ module.exports = gql`
     count: Int!
     # Book implements Node
     nodes: [Book!]!
-    cursor: String
+    nextPageCursor: String
     hasNextPage: Boolean!
 
     # the books Query can include some extra meta-data besides what is defined PaginationResult

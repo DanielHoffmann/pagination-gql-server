@@ -79,7 +79,7 @@ module.exports = {
 
       return {
         // the last element ID
-        cursor: nodes.length === 0 ? null : nodes[nodes.length - 1].id,
+        nextPageCursor: nodes.length === 0 ? null : nodes[nodes.length - 1].id,
         count: nodes.length,
         hasNextPage,
         nodes,
