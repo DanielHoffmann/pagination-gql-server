@@ -8,6 +8,7 @@ const typeDefs = require("./schema");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
   playground: {},
 });
 
